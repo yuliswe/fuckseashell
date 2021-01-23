@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+set -ex
+
+__dir__="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export HOST_SDK_ROOT="$__dir__"
+
+cd $__dir__/dev
+docker-compose up -d --build
+docker-compose exec fuckseashell-sdk bash

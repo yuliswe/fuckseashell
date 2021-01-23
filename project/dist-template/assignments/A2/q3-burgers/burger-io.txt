@@ -1,0 +1,25 @@
+Input format for testing your burger code
+
+COMMANDS
+
+  add buns N        calls add_buns(N)
+  add cheese N      calls add_chese(N)
+  add patties N     calls add_patties(N)
+  add pickles N     calls add_pickles(N)
+  order N           calls order(N)
+  inventory         calls check_inventory()
+  quit              exits the program
+
+  where N is an int
+
+
+Here are the contents of public.in as an example:
+
+  order 10
+  add buns 1
+  add cheese 1
+  add patties 1
+  add pickles 1
+  order 10
+  inventory
+  quit

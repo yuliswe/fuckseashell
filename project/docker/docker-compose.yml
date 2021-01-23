@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  fuckseashell:
+    image: fuckseashell:latest
+    container_name: fuckseashell
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    volumes:
+      - ${HOST_PROJECT_DIR:?err}/dist-template/assignments:/assignments
+      - ${HOST_PROJECT_DIR:?err}/docker/bin:/opt/bin
+      - ${HOST_PROJECT_DIR:?err}/py:/py

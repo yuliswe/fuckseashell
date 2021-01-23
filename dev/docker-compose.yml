@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  fuckseashell-sdk:
+    image: fuckseashell-sdk
+    build:
+      context: .
+    container_name: fuckseashell-sdk
+    hostname: fuckseashell-sdk
+    working_dir: /fuckseashell-sdk/project
+    volumes:
+      - ../:/fuckseashell-sdk # required
+      - ${HOME:?err}/.ssh/:/root/.ssh:ro # required
+      - ./bashrc:/root/.bashrc # the only way to copy
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root
+      - /tmp
+    environment:
+      - HOST_SDK_ROOT=${HOST_SDK_ROOT:?err} # required for bind mount inside sdk
+    env_file: dev.env
+    pid: host

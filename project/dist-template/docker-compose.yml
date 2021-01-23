@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  fuckseashell:
+    image: fuckseashell:latest
+    container_name: fuckseashell
+    volumes:
+      - ./assignments:/assignments

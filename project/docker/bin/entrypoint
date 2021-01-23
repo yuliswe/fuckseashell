@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo Welcome to fuckseashell!
+echo Place your Ax-seashell.zip file in the assignments directory,
+echo then open Visual Studio Code, attach to the fuckseashell container,
+echo and open /assignments. Happy coding!
+
+sleep inf
