@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   fuckseashell:
-    image: fuckseashell:latest
+    image: ylilarry/fuckseashell:latest
     container_name: fuckseashell
     build:
       context: ..

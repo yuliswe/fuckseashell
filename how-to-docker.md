@@ -17,13 +17,11 @@ Steps:
    https://docs.docker.com/get-docker/ to download and install Docker Desktop
    for your system.
 
-2. After Docker Desktop is installed, download our fuckseashell docker-compose
-   template directory, extract the zip file to somewhere you want to store your
-   code to.
+2. After Docker Desktop is installed, download our [fuckseashell template
+   directory](https://github.com/ylilarry/fuckseashell-template/archive/main.zip),
+   extract the zip file to somewhere you want to store your code to.
 
-3. Next, download the `Ax-seashell.zip` file for the assignment from the CS136
-   course website, and place the `Ax-seashell.zip` file in the `assignments`
-   directory of
+3. Next, open terminal and cd to the fuckseashell-template directory above.
 
 ```
 docker compose up -d
