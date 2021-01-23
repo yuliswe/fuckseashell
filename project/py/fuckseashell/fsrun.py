@@ -8,6 +8,7 @@ import re
 from zipfile import ZipFile
 from textwrap import dedent, indent
 from tempfile import TemporaryDirectory
+from fuckseashell.env import CLANG_PATH
 
 
 def run_clang(object_files):
@@ -20,7 +21,7 @@ def run_clang(object_files):
     with TemporaryDirectory() as tmpdir:
         run(
             [
-                "clang-11",
+                CLANG_PATH,
                 "-fsanitize=address",
                 "-fsanitize-address-use-after-scope",
                 "-Wall",

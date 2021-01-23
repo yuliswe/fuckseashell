@@ -1,8 +1,0 @@
-order 10
-add buns 1
-add cheese 1
-add patties 1
-add pickles 1
-order 10
-inventory
-quit

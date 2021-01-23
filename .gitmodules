@@ -1,0 +1,3 @@
+[submodule "deps/fuckseashell-template"]
+	path = deps/fuckseashell-template
+	url = https://github.com/ylilarry/fuckseashell-template.git

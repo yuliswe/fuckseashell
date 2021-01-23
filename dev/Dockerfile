@@ -27,6 +27,6 @@ RUN apt-get install -y python3.8 python3-pip git
 COPY bin /opt/bin
 RUN chmod a+x /opt/bin/*
 
-RUN python3.8 -m pip install flake8 bandit autopep8 pylint black rope
+RUN python3.8 -m pip install flake8 bandit autopep8 pylint black rope twine
 
 CMD /opt/bin/entrypoint
