@@ -34,7 +34,7 @@ def main(assignment):
     assignment_num = matcher.group(1)
     url = f"https://www.student.cs.uwaterloo.ca/~cs136/assignment_skeletons/A{assignment_num}-seashell.zip"
     print(f"Downloading from {url}")
-    p_assignment_zip = Path("/assignments") / f"A{assignment_num}-seashell.zip"
+    p_assignment_zip = env.ASSIGNMENT_DIR / f"A{assignment_num}-seashell.zip"
     if p_assignment_zip.exists():
         exit(f"{p_assignment_zip} already exists.")
     response = requests.get(url, allow_redirects=True)

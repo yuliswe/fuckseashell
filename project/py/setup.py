@@ -5,8 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="fuckseashell",  # Replace with your own username
-    version="0.0.2",
-    author="Example Author",
+    version="0.0.3",
+    author="Yu Li",
     author_email="ylilarry@gmail.com",
     description="Tool Kits for Using Clang and VSC instead of Seashell for CS136 assignments",
     long_description=long_description,

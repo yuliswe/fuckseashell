@@ -10,6 +10,7 @@ services:
     volumes:
       - ../:/fuckseashell-sdk # required
       - ${HOME:?err}/.ssh/:/root/.ssh:ro # required
+      - ./bin:/opt/bin
       - ./bashrc:/root/.bashrc # the only way to copy
       - /var/run/docker.sock:/var/run/docker.sock
       - /root

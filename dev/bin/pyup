@@ -1,0 +1,8 @@
+#/bin/bash
+
+set -ex
+
+pypack
+
+cd $SDK_ROOT/project/py
+python3 -m twine upload dist/*

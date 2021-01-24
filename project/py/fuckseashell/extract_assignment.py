@@ -7,6 +7,7 @@ import click
 import re
 from zipfile import ZipFile
 from textwrap import dedent
+from fuckseashell.env import ASSIGNMENT_DIR
 
 
 @click.command()
@@ -30,13 +31,12 @@ def main(assignment):
             )
         )
     asn_num = matcher.group(1)
-    p_assignments = Path("/assignments")
-    p_assignment_zip = p_assignments / f"A{asn_num}-seashell.zip"
+    p_assignment_zip = ASSIGNMENT_DIR / f"A{asn_num}-seashell.zip"
     if not p_assignment_zip.exists():
         exit(f"{p_assignment_zip} does not exist.")
 
     asn_num = matcher.group(1)
-    extract_to = p_assignments / f"A{asn_num}"
+    extract_to = ASSIGNMENT_DIR / f"A{asn_num}"
 
     print(f"Extracting to {extract_to}.")
     with ZipFile(p_assignment_zip, "r") as zip_ref:
